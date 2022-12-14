@@ -1,8 +1,7 @@
 ---
-
 - name: Set up PXE Server
-  hosts: PXEServer
-  become: yes
+  hosts: pxeserver
+  become: true
   vars_files: 
       - defaults/main.yml
   tasks:
